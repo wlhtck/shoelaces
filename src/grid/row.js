@@ -1,4 +1,4 @@
-export const row = ({ gutter = false, reverse = false }) => {
+export const row = ({ gutter, reverse }) => {
   return {
     boxSizing: 'border-box',
     display: 'flex',

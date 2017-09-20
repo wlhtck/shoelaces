@@ -39,6 +39,8 @@ export const colWidth = size => {
 * uses colSize to calculate margin for the given side
 *
 **/
+// TODO: Fix the colOffset, currently the prog only accepts a number
+// this won't work in responsive column implementations
 export const colOffset = num => {
   if (!num) return {}
   return {
