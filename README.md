@@ -1,5 +1,7 @@
 # { 👟 } shoelaces-js
 
+[![CircleCI](https://circleci.com/gh/will-hitchcock/shoelaces-js.svg?style=svg)](https://circleci.com/gh/will-hitchcock/shoelaces-js)
+
 A CSS in JS grid system
 
 ## Features
