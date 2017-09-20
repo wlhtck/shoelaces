@@ -7,14 +7,11 @@ const env = require('yargs').argv.env // use --env with webpack 2
 
 let libraryName = 'shoelaces'
 
-let plugins = [],
-  outputFile
+let plugins = []
+const outputFile = libraryName + '.js'
 
 if (env === 'build') {
   plugins.push(new UglifyJsPlugin({ minimize: true }))
-  outputFile = libraryName + '.min.js'
-} else {
-  outputFile = libraryName + '.js'
 }
 
 const config = {
