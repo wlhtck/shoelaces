@@ -1,4 +1,4 @@
-# { 👟 } shoelaces-js
+# { 👟 } shoelaces
 
 [![CircleCI](https://circleci.com/gh/will-hitchcock/shoelaces.svg?style=svg)](https://circleci.com/gh/will-hitchcock/shoelaces)
 
