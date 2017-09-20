@@ -1,8 +1,9 @@
 {
-  "name": "shoelaces-js",
+  "name": "shoelaces",
   "version": "0.0.1",
   "description": "CSS in JS grid system",
   "main": "lib/shoelaces.js",
+  "files": ["lib"],
   "scripts": {
     "build": "webpack --env build",
     "dev": "webpack --progress --colors --watch --env dev",
