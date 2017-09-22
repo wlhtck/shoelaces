@@ -6,7 +6,7 @@ import {
   flatten,
   flattenMin,
   flattenMax
-} from '../../src/util/media'
+} from '../media'
 
 describe('media', () => {
   const minQuery = '@media (min-width: 36em)'
@@ -70,9 +70,7 @@ describe('media', () => {
 
   describe('flatten', () => {
     it('should wrap the result of provided mixin for any valid size props', () => {
-      const mixin = width => {
-        return { width }
-      }
+      const mixin = width => ({ width })
 
       expect(flatten(queries.min, { sm: '1em' }, mixin)).toEqual({
         [minQuery]: { width: '1em' }
@@ -82,9 +80,7 @@ describe('media', () => {
 
   describe('flattenMin', () => {
     it('should wrap the result of provided mixin for any valid size props', () => {
-      const mixin = width => {
-        return { width }
-      }
+      const mixin = width => ({ width })
 
       expect(flattenMin({ sm: '1em' }, mixin)).toEqual({
         [minQuery]: { width: '1em' }
@@ -94,9 +90,7 @@ describe('media', () => {
 
   describe('flattenMax', () => {
     it('should wrap the result of provided mixin for any valid size props', () => {
-      const mixin = width => {
-        return { width }
-      }
+      const mixin = width => ({ width })
 
       expect(flattenMax({ sm: '1em' }, mixin)).toEqual({
         [maxQuery]: { width: '1em' }

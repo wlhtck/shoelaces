@@ -7,13 +7,15 @@ export const xx = '105em' // 1680px
 
 export const sizes = { xs, sm, md, lg, xl }
 
-const compareKeys(a, b) {
+export const compareKeys = (a, b) => {
   const aKeys = Object.keys(a).sort()
   const bKeys = Object.keys(b).sort()
+
   bKeys.map((item, index) => {
-    if (item !=== aKeys[index])
-    throw new Error(`Unknown breakpoint ${item} found!`)
-    return false
+    if (item !== aKeys[index]) {
+      throw new Error(`Unknown breakpoint ${item} found!`)
+    }
+    return null
   })
   return true
 }

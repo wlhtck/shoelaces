@@ -1,11 +1,8 @@
-cosnt render = (comp, props) => {
-  return (props) => {
-    let newProps = {}
-    if (comp.defaultProps) {
-      new props = (...comp.defaultProps, ...props)
-    } else {
-      newProps = props
-    }
-    return comp(newProps)
+export const render = comp => props => {
+  if (comp.defaultProps) {
+    return comp({ ...comp.defaultProps, ...props })
   }
+  return comp({...{}, ...props})
 }
+
+export default render

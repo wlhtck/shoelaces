@@ -1,5 +1,3 @@
-export const item = () => {
-  return {
-    alignSelf: ''
-  }
-}
+export const item = () => ({
+  alignSelf: ''
+})

@@ -4,7 +4,11 @@ export const queries = {
   min: key => `@media (min-width: ${breakpoints[key]})`,
   max: key => `@media (max-width: ${breakpoints[key]})`,
   between: (start, end) =>
-    `@media (min-width: ${breakpoints[start]} and (max-width: ${breakpoints[end]}`
+    `@media (min-width: ${
+      breakpoints[start]
+    } and (max-width: ${
+      breakpoints[end]
+    }`
 }
 
 export const min = key => args => {
@@ -17,9 +21,9 @@ export const max = key => args => {
   return { [queries.max(key)]: args }
 }
 
-export const between = (start, end) => args => {
-  return { [queries.between(start, end)]: args }
-}
+export const between = (start, end) => args => ({
+  [queries.between(start, end)]: args
+})
 
 export const flatten = (query, props, mixin) => {
   const output = {}

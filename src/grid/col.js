@@ -1,13 +1,12 @@
 import { flattenMin } from '../util/media'
-import render '../util/render'
+import render from '../util/render'
 /**
 *
 * Utility function for calculating col size
-* values below 1 are used to calculate percentage widths
-* values between 1 and 12 are used for 12 column grid pattern
+* Values must be between 0 and 1
 *
 **/
-export const colSize = num => num * 100 + '%'
+const colSize = num => num * 100 + '%'
 
 /**
 *
@@ -17,7 +16,7 @@ export const colSize = num => num * 100 + '%'
 * also accepts 'auto'
 *
 **/
-export const colWidth = size => {
+const colWidth = size => {
   if (size === 'auto') {
     return {
       flexGrow: 1,
@@ -42,23 +41,21 @@ export const colWidth = size => {
 **/
 // TODO: Fix the colOffset, currently the prog only accepts a number
 // this won't work in responsive column implementations
-export const colOffset = num => {
+const colOffset = num => {
   if (!num) return {}
   return {
     marginLeft: `${colSize(num)}`
   }
 }
 
-export const col = ({ gutter, reverse, offset, ...props }) => {
-  return {
-    boxSizing: 'border-box',
-    flex: '0 0 auto',
-    padding: gutter,
-    flexDirection: reverse ? 'column-reverse' : 'initial',
-    ...colOffset(offset),
-    ...flattenMin(props, colWidth)
-  }
-}
+const col = ({ gutter, reverse, offset, ...props }) => ({
+  boxSizing: 'border-box',
+  flex: '0 0 auto',
+  padding: gutter,
+  flexDirection: reverse ? 'column-reverse' : 'initial',
+  ...colOffset(offset),
+  ...flattenMin(props, colWidth)
+})
 
 col.defaultProps = {
   gutter: '0.5em'
