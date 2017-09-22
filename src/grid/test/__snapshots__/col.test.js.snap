@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`col renders 0.5 offset col styles 1`] = `
+Object {
+  "boxSizing": "border-box",
+  "flex": "0 0 auto",
+  "flexDirection": "initial",
+  "marginLeft": "50%",
+  "padding": "0.5em",
+}
+`;
+
+exports[`col renders default col styles 1`] = `
+Object {
+  "boxSizing": "border-box",
+  "flex": "0 0 auto",
+  "flexDirection": "initial",
+  "padding": "0.5em",
+}
+`;
+
+exports[`col renders reverse col styles 1`] = `
+Object {
+  "boxSizing": "border-box",
+  "flex": "0 0 auto",
+  "flexDirection": "column-reverse",
+  "padding": "0.5em",
+}
+`;
+
+exports[`col renders size md auto col styles 1`] = `
+Object {
+  "@media (min-width: 48em)": Object {
+    "flexBasis": 0,
+    "flexGrow": 1,
+    "maxWidth": "100%",
+  },
+  "boxSizing": "border-box",
+  "flex": "0 0 auto",
+  "flexDirection": "initial",
+  "padding": "0.5em",
+}
+`;
+
+exports[`col renders size xs 0.5 col styles 1`] = `
+Object {
+  "@media (min-width: 0)": Object {
+    "flexBasis": "50%",
+    "maxWidth": "50%",
+  },
+  "boxSizing": "border-box",
+  "flex": "0 0 auto",
+  "flexDirection": "initial",
+  "padding": "0.5em",
+}
+`;

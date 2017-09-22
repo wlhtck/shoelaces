@@ -32,10 +32,7 @@
   ],
 
   "rules": {
-    "arrow-body-style": [
-      2, "as-needed",
-      { "requireReturnForObjectLiteral": true }
-    ],
+    "arrow-body-style": 2,
     "arrow-parens": [2, "as-needed"],
     "block-scoped-var": 2,
     "brace-style": [2, "1tbs", { "allowSingleLine": true }],

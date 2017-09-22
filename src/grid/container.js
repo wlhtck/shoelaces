@@ -1,6 +1,7 @@
 import { flattenMin } from '../util/media'
+import render from '../util/render'
 
-export const container = ({ fluid }) => {
+const container = ({ fluid }) => {
   const width = fluid ?
   {
     width: '100%',
@@ -10,9 +11,8 @@ export const container = ({ fluid }) => {
   } :
   flattenMin(
     { sm: '34em', md: '45em', lg: '58em', xl: '70em', xx: '99em' },
-    width => {
-      return { width }
-    })
+    width => ({ width })
+  )
 
   return {
     marginRight: 'auto',
@@ -21,4 +21,4 @@ export const container = ({ fluid }) => {
   }
 }
 
-export default container
+export default render(container)

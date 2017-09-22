@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`row renders default row styles 1`] = `
+Object {
+  "boxSizing": "border-box",
+  "display": "flex",
+  "flex": "0 1 auto",
+  "flexDirection": "row",
+  "flexWrap": "wrap",
+  "marginLeft": "-0.5em",
+  "marginRight": "-0.5em",
+}
+`;
+
+exports[`row renders reverse row styles 1`] = `
+Object {
+  "boxSizing": "border-box",
+  "display": "flex",
+  "flex": "0 1 auto",
+  "flexDirection": "row-reverse",
+  "flexWrap": "wrap",
+  "marginLeft": "-0.5em",
+  "marginRight": "-0.5em",
+}
+`;
+
+exports[`row renders reverse row styles with a 20em gutter 1`] = `
+Object {
+  "boxSizing": "border-box",
+  "display": "flex",
+  "flex": "0 1 auto",
+  "flexDirection": "row-reverse",
+  "flexWrap": "wrap",
+  "marginLeft": "-20em",
+  "marginRight": "-20em",
+}
+`;
+
+exports[`row renders row styles with a 15px gutter 1`] = `
+Object {
+  "boxSizing": "border-box",
+  "display": "flex",
+  "flex": "0 1 auto",
+  "flexDirection": "row",
+  "flexWrap": "wrap",
+  "marginLeft": "-15px",
+  "marginRight": "-15px",
+}
+`;

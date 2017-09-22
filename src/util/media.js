@@ -1,10 +1,14 @@
-import sizes from '../const/sizes'
+import breakpoints from '../const/breakpoints'
 
 export const queries = {
-  min: key => `@media (min-width: ${sizes[key]})`,
-  max: key => `@media (max-width: ${sizes[key]})`,
+  min: key => `@media (min-width: ${breakpoints[key]})`,
+  max: key => `@media (max-width: ${breakpoints[key]})`,
   between: (start, end) =>
-    `@media (min-width: ${sizes[start]} and (max-width: ${sizes[end]}`
+    `@media (min-width: ${
+      breakpoints[start]
+    } and (max-width: ${
+      breakpoints[end]
+    }`
 }
 
 export const min = key => args => {
@@ -17,14 +21,14 @@ export const max = key => args => {
   return { [queries.max(key)]: args }
 }
 
-export const between = (start, end) => args => {
-  return { [queries.between(start, end)]: args }
-}
+export const between = (start, end) => args => ({
+  [queries.between(start, end)]: args
+})
 
 export const flatten = (query, props, mixin) => {
   const output = {}
 
-  Object.keys(sizes)
+  Object.keys(breakpoints)
     .filter(a => !!props[a])
     .map(value => (output[query(value)] = mixin(props[value])))
   return output

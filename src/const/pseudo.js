@@ -1,7 +1,7 @@
 export const active = '&:active'
 export const any = '&:any'
 export const checked = '&:checked'
-// export const default = '&:default'
+export const dflt = '&:default'
 export const dir = a => `&:dir(${a})`
 export const disabled = '&:disabled'
 export const empty = '&:empty'
@@ -49,7 +49,7 @@ export const pseudo = {
   active,
   any,
   checked,
-  // default,
+  dflt,
   dir,
   disabled,
   empty,
