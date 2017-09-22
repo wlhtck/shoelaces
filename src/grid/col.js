@@ -1,4 +1,5 @@
 import { flattenMin } from '../util/media'
+import render '../util/render'
 /**
 *
 * Utility function for calculating col size
@@ -52,11 +53,15 @@ export const col = ({ gutter, reverse, offset, ...props }) => {
   return {
     boxSizing: 'border-box',
     flex: '0 0 auto',
-    padding: gutter || '0.5em',
+    padding: gutter,
     flexDirection: reverse ? 'column-reverse' : 'initial',
     ...colOffset(offset),
     ...flattenMin(props, colWidth)
   }
 }
 
-export default col
+col.defaultProps = {
+  gutter: '0.5em'
+}
+
+export default render(col)
