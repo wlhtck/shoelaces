@@ -42,9 +42,7 @@ Object {
 
 exports[`media flattenMin renders the renders width 0.5em inside a min xs media query 1`] = `
 Object {
-  "@media (min-width: 0)": Object {
-    "width": "0.5em",
-  },
+  "width": "0.5em",
 }
 `;
 
