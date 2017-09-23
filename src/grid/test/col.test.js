@@ -13,6 +13,10 @@ describe('col', () => {
     expect(col({ offset: 0.5 })).toMatchSnapshot()
   })
 
+  it('renders 0.5 xs offset col styles', () => {
+    expect(col({ offset: { xs: 0.5 } })).toMatchSnapshot()
+  })
+
   it('renders size xs 0.5 col styles', () => {
     expect(col({ xs: 0.5 })).toMatchSnapshot()
   })

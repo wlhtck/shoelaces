@@ -17,6 +17,25 @@ Object {
 }
 `;
 
+exports[`col renders 0.5 xs offset col styles 1`] = `
+Object {
+  "@media (min-width: 0)": Object {
+    "marginLeft": "50%",
+  },
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
+  "boxSizing": "border-box",
+  "display": "flex",
+  "flex": "0 0 auto",
+  "flexDirection": "column",
+  "flexWrap": "nowrap",
+  "justifyContent": "space-between",
+  "order": 0,
+  "padding": "0.5em",
+}
+`;
+
 exports[`col renders default col styles 1`] = `
 Object {
   "alignContent": "flex-start",

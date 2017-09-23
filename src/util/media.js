@@ -25,12 +25,14 @@ export const between = (start, end) => args => ({
   [queries.between(start, end)]: args
 })
 
-export const flatten = (query, props, mixin) => {
+export const flatten = (query, prop, mixin) => {
+  if (typeof prop !== 'object') { return mixin(prop) }
   const output = {}
 
   Object.keys(breakpoints)
-    .filter(a => !!props[a])
-    .map(value => (output[query(value)] = mixin(props[value])))
+    .filter(a => !!prop[a])
+    .map(value => (output[query(value)] = mixin(prop[value])))
+
   return output
 }
 
