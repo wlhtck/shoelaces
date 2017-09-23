@@ -1,5 +1,6 @@
 import { flattenMin } from '../util/media'
 import render from '../util/render'
+import flex from './flex'
 /**
 *
 * Utility function for calculating col size
@@ -39,7 +40,7 @@ const colWidth = size => {
 * uses colSize to calculate margin for the given side
 *
 **/
-// TODO: Fix the colOffset, currently the prog only accepts a number
+// TODO: Fix the colOffset, currently the prop only accepts a number
 // this won't work in responsive column implementations
 const colOffset = num => {
   if (!num) return {}
@@ -48,16 +49,17 @@ const colOffset = num => {
   }
 }
 
-const col = ({ gutter, reverse, offset, ...props }) => ({
+const col = ({ gutter, offset, ...props }) => ({
   boxSizing: 'border-box',
   flex: '0 0 auto',
   padding: gutter,
-  flexDirection: reverse ? 'column-reverse' : 'initial',
+  ...flex(props),
   ...colOffset(offset),
   ...flattenMin(props, colWidth)
 })
 
 col.defaultProps = {
+  column: true,
   gutter: '0.5em'
 }
 

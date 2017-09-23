@@ -1,7 +1,7 @@
 import { flattenMin } from '../util/media'
 import render from '../util/render'
 
-const container = ({ fluid }) => {
+const container = ({ fluid, ...props }) => {
   const width = fluid ?
   {
     width: '100%',

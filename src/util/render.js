@@ -1,8 +1,27 @@
-export const render = comp => props => {
-  if (comp.defaultProps) {
-    return comp({ ...comp.defaultProps, ...props })
+const validate = (compName, propTypes, props) => {
+  if (process.env.NODE_ENV !== 'production') {
+    for (let propName in propTypes) {
+      if (
+        typeof propTypes[propName] === 'function' &&
+        !propTypes[propName](props[propName])
+      ) {
+        console.error(
+          `Invalid value for ${propName} (${props[
+            propName
+          ]}) supplied to ${compName}`
+        )
+      }
+    }
   }
-  return comp({...{}, ...props})
+  return props
 }
+
+export const render = comp => props =>
+  comp(
+    validate(comp.name, comp.propTypes, {
+      ...(comp.defaultProps || {}),
+      ...props
+    })
+  )
 
 export default render
