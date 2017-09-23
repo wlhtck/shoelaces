@@ -1,3 +1,5 @@
+import breakpoints from '../const/breakpoints'
+
 const validatorFactory = type => prop => {
   if (typeof prop === type || prop === undefined) {
     return true

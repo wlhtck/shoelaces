@@ -6,9 +6,7 @@ const validate = (compName, propTypes, props) => {
         !propTypes[propName](props[propName])
       ) {
         console.error(
-          `Invalid value for ${propName} (${props[
-            propName
-          ]}) supplied to ${compName}`
+          `Invalid value for ${propName} (${props[propName]}) supplied to ${compName}. Expected type ${propTypes[propName].name}.` // eslint-disable-line max-len
         )
       }
     }
@@ -19,7 +17,7 @@ const validate = (compName, propTypes, props) => {
 export const render = comp => props =>
   comp(
     validate(comp.name, comp.propTypes, {
-      ...(comp.defaultProps || {}),
+      ...comp.defaultProps,
       ...props
     })
   )
