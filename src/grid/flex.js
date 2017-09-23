@@ -14,16 +14,16 @@ const properties = {
 }
 
 const flex = ({
-  alignContent, // start | end | center | between | around | stretch
-  alignItems, // start | end | center | baseline | stretch
-  alignSelf, // auto | start | end | center | baseline | stretch
-  column, // bool
-  first, // bool
-  inline, // bool
-  justifyContent, // start | end | center | between | around | evenly
-  last, // bool
-  reverse, // bool
-  wrap // bool
+  alignContent,
+  alignItems,
+  alignSelf,
+  column,
+  first,
+  inline,
+  justifyContent,
+  last,
+  reverse,
+  wrap
 }) => ({
   alignContent: properties[alignContent],
   alignItems: properties[alignItems],
