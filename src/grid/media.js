@@ -28,11 +28,17 @@ export const between = (start, end) => args => {
 
 export const flatten = (query, prop, mixin) => {
   if (typeof prop !== 'object') { return mixin(prop) }
-  const output = {}
+  let output = {}
 
   Object.keys(breakpoints)
     .filter(a => !!prop[a])
-    .map(value => (output[query(value)] = mixin(prop[value])))
+    .map(value => {
+      if (query.name === 'min' && breakpoints[value] === 0) {
+        output = { ...output, ...mixin(prop[value])}
+      } else {
+        output[query(value)] = mixin(prop[value])
+      }
+    })
 
   return output
 }
