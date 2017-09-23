@@ -14,21 +14,9 @@ const oneOf = arr => prop => {
   return false
 }
 
-const responsive = prop => {
-  if (prop === undefined) { return true }
-  if (typeof prop !== 'object') { return false }
-  for (const key in prop) {
-    if (!breakpoints.hasOwnProperty(key)) {
-      return false
-    }
-  }
-  return true
-}
-
 export default {
   string: validatorFactory('string'),
   bool: validatorFactory('boolean'),
   number: validatorFactory('number'),
-  oneOf,
-  responsive
+  oneOf
 }
