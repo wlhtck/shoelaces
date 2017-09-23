@@ -46,4 +46,8 @@ describe('flex', () => {
   it('renders last', () => {
     expect(flex({ last: true })).toMatchSnapshot()
   })
+
+  it('renders inline', () => {
+    expect(flex({ inline: true })).toMatchSnapshot()
+  })
 })

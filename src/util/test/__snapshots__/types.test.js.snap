@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`bool validates whether "string" is a bool 1`] = `false`;
+
+exports[`bool validates whether 12 is a bool 1`] = `false`;
+
+exports[`bool validates whether true is a bool 1`] = `true`;
+
+exports[`number validates whether "string" is a number 1`] = `false`;
+
+exports[`number validates whether 12 is a number 1`] = `true`;
+
+exports[`number validates whether true is a number 1`] = `false`;
+
+exports[`oneOf validates whether "ham" is either "ham" or "cheese" 1`] = `true`;
+
+exports[`oneOf validates whether "mayo" is either "ham" or "cheese" 1`] = `false`;
+
+exports[`string validates whether "string" is a string 1`] = `true`;
+
+exports[`string validates whether 12 is a string 1`] = `false`;
+
+exports[`string validates whether true is a string 1`] = `false`;
+
+exports[`unit validates whether "0" is a unit 1`] = `true`;
+
+exports[`unit validates whether "90" is a unit 1`] = `false`;
+
+exports[`unit validates whether "100px" is a unit 1`] = `true`;
+
+exports[`unit validates whether "auto" is a unit 1`] = `true`;
+
+exports[`unit validates whether 0 is a unit 1`] = `true`;
+
+exports[`unit validates whether 90 is a unit 1`] = `false`;

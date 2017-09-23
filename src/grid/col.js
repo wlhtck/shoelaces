@@ -1,7 +1,7 @@
-import { flattenMin } from '../util/media'
 import render from '../util/render'
+import { unit } from '../util/types'
 import flex from './flex'
-import { string } from '../util/types'
+import { flattenMin } from './media'
 
 const colSize = num => num * 100 + '%'
 
@@ -29,7 +29,7 @@ const colOffset = num => {
   }
 }
 
-const col = ({ gutter, offset, ...props }) => ({
+const col = ({ gutter, offset, size, ...props }) => ({
   boxSizing: 'border-box',
   flex: '0 0 auto',
   padding: gutter,
@@ -44,7 +44,7 @@ col.defaultProps = {
 }
 
 col.propTypes = {
-  gutter: string
+  gutter: unit
 }
 
 export default render(col)

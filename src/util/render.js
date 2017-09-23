@@ -5,7 +5,7 @@ const validate = (compName, propTypes, props) => {
         typeof propTypes[propName] === 'function' &&
         !propTypes[propName](props[propName])
       ) {
-        console.error(
+        throw new Error(
           `Invalid value for ${propName} (${props[propName]}) supplied to ${compName}. Expected type ${propTypes[propName].name}.` // eslint-disable-line max-len
         )
       }

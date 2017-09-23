@@ -78,6 +78,19 @@ Object {
 }
 `;
 
+exports[`flex renders inline 1`] = `
+Object {
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
+  "display": "inline-flex",
+  "flexDirection": "row",
+  "flexWrap": "nowrap",
+  "justifyContent": "space-between",
+  "order": 0,
+}
+`;
+
 exports[`flex renders justifyContent around 1`] = `
 Object {
   "alignContent": "flex-start",
