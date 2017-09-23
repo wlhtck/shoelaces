@@ -2,48 +2,68 @@
 
 exports[`row renders default row styles 1`] = `
 Object {
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
   "boxSizing": "border-box",
   "display": "flex",
   "flex": "0 1 auto",
   "flexDirection": "row",
   "flexWrap": "wrap",
+  "justifyContent": "space-between",
   "marginLeft": "-0.5em",
   "marginRight": "-0.5em",
+  "order": 0,
 }
 `;
 
 exports[`row renders reverse row styles 1`] = `
 Object {
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
   "boxSizing": "border-box",
   "display": "flex",
   "flex": "0 1 auto",
   "flexDirection": "row-reverse",
   "flexWrap": "wrap",
+  "justifyContent": "space-between",
   "marginLeft": "-0.5em",
   "marginRight": "-0.5em",
+  "order": 0,
 }
 `;
 
 exports[`row renders reverse row styles with a 20em gutter 1`] = `
 Object {
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
   "boxSizing": "border-box",
   "display": "flex",
   "flex": "0 1 auto",
   "flexDirection": "row-reverse",
   "flexWrap": "wrap",
+  "justifyContent": "space-between",
   "marginLeft": "-20em",
   "marginRight": "-20em",
+  "order": 0,
 }
 `;
 
 exports[`row renders row styles with a 15px gutter 1`] = `
 Object {
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
   "boxSizing": "border-box",
   "display": "flex",
   "flex": "0 1 auto",
   "flexDirection": "row",
   "flexWrap": "wrap",
+  "justifyContent": "space-between",
   "marginLeft": "-15px",
   "marginRight": "-15px",
+  "order": 0,
 }
 `;
