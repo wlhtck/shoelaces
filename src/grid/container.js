@@ -1,5 +1,5 @@
-import { flattenMin } from '../util/media'
 import render from '../util/render'
+import { flattenMin } from './media'
 
 const container = ({ fluid }) => {
   const width = fluid ?
