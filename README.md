@@ -101,10 +101,12 @@ min('md')({ backgroundColor: 'steelblue' })
 ```
 
 The following breakpoints are available:
-Note that because the value for xs is 0 using it with min will **not** wrap styles in a media query
+
 - xs: 0
 - sm: '36em' // 576px
 - md: '48em' // 768px
 - lg: '62em' // 992px
 - xl: '75em' // 1200px
 - xx: '105em' // 1680px
+
+Note that because the value for xs is 0 using it with min will **not** wrap styles in a media query
