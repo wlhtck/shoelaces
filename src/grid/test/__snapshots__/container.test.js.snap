@@ -2,6 +2,9 @@
 
 exports[`container renders default container styles 1`] = `
 Object {
+  "@media (min-width: 105em)": Object {
+    "width": "99em",
+  },
   "@media (min-width: 36em)": Object {
     "width": "34em",
   },

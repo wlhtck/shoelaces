@@ -59,3 +59,54 @@ Column component to separate content horizontally
     - width of the column at the given breakpoint
     - number should be between 0 and 1, use math to implement a 12 column system or any system you choose!
     - `{ xs: 12 / 12, md: 6 / 12 }`
+### flex
+Flex-box properties these props are available on row and col or can be used on their own `import { flex } from shoelaces`
+- props:
+  - `alignContent` - string, accepted values: 'start', 'end', 'center', 'between', 'around', 'stretch'
+    - corresponds to `align-content` css property
+    - default: `'start'`
+  - `alignItems` - string, accepted values: 'start', 'end', 'center', 'baseline', 'stretch'
+    - corresponds to `align-items` css property
+    - default: `'stretch'`
+  - `alignSelf` - string, accepted values: 'auto', 'start', 'end', 'center', 'baseline', 'stretch'
+    - corresponds to `align-self` css property
+    - default: `'auto'`
+  - `column` - bool
+    - renders `flex-direction` as `column`
+  - `first` - bool
+    - renders `order: -1` making the item first in its parent
+  - `inline` - bool
+    - renders `display: inline-flex` instead of `display: flex`
+  - `justifyContent` - string, accepted values: 'start', 'end', 'center', 'between', 'around', 'evenly'
+    - corresponds to `jsutify-content` css property
+    - default: `'between'`
+  - `last` - bool
+    - renders `order: 1` making the item last in its parent
+  - `reverse` - bool
+    - renders `flex-direction: row-reverse` unless using column then `flex-direction: column-reverse`
+  - `wrap`
+    - renders `flex-wrap: wrap` instead of `flex-wrap: nowrap`
+### media queries
+- Media queries are available as `min`, `max`, and `between`
+- They accept a media query key (or 2 in the case of `between`) and return a function that will wrap the input in the specified media query.
+- Ex:
+```javascript
+min('md')({ backgroundColor: 'steelblue' })
+// =>
+// {
+//   '@media (max-width: 48em)': {
+//     backgroudColor: 'steelblue'
+//   }
+// }
+```
+
+The following breakpoints are available:
+
+- xs: 0
+- sm: '36em' // 576px
+- md: '48em' // 768px
+- lg: '62em' // 992px
+- xl: '75em' // 1200px
+- xx: '105em' // 1680px
+
+Note that because the value for xs is 0 using it with min will **not** wrap styles in a media query
