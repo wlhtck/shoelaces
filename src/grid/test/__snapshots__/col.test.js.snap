@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`col renders 0.5 offset col styles 1`] = `
+Object {
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
+  "boxSizing": "border-box",
+  "display": "flex",
+  "flex": "0 0 auto",
+  "flexDirection": "column",
+  "flexWrap": "nowrap",
+  "justifyContent": "space-between",
+  "marginLeft": "50%",
+  "order": 0,
+  "padding": "0.5em",
+}
+`;
+
+exports[`col renders 0.5 xs offset col styles 1`] = `
+Object {
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
+  "boxSizing": "border-box",
+  "display": "flex",
+  "flex": "0 0 auto",
+  "flexDirection": "column",
+  "flexWrap": "nowrap",
+  "justifyContent": "space-between",
+  "marginLeft": "50%",
+  "order": 0,
+  "padding": "0.5em",
+}
+`;
+
+exports[`col renders default col styles 1`] = `
+Object {
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
+  "boxSizing": "border-box",
+  "display": "flex",
+  "flex": "0 0 auto",
+  "flexDirection": "column",
+  "flexWrap": "nowrap",
+  "justifyContent": "space-between",
+  "order": 0,
+  "padding": "0.5em",
+}
+`;
+
+exports[`col renders reverse col styles 1`] = `
+Object {
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
+  "boxSizing": "border-box",
+  "display": "flex",
+  "flex": "0 0 auto",
+  "flexDirection": "column-reverse",
+  "flexWrap": "nowrap",
+  "justifyContent": "space-between",
+  "order": 0,
+  "padding": "0.5em",
+}
+`;
+
+exports[`col renders size md auto col styles 1`] = `
+Object {
+  "@media (min-width: 48em)": Object {
+    "flexBasis": 0,
+    "flexGrow": 1,
+    "maxWidth": "100%",
+  },
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
+  "boxSizing": "border-box",
+  "display": "flex",
+  "flex": "0 0 auto",
+  "flexDirection": "column",
+  "flexWrap": "nowrap",
+  "justifyContent": "space-between",
+  "order": 0,
+  "padding": "0.5em",
+}
+`;
+
+exports[`col renders size xs 0.5 col styles 1`] = `
+Object {
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
+  "boxSizing": "border-box",
+  "display": "flex",
+  "flex": "0 0 auto",
+  "flexBasis": "50%",
+  "flexDirection": "column",
+  "flexWrap": "nowrap",
+  "justifyContent": "space-between",
+  "maxWidth": "50%",
+  "order": 0,
+  "padding": "0.5em",
+}
+`;

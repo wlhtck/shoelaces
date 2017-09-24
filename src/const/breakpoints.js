@@ -5,4 +5,6 @@ export const lg = '62em' // 992px
 export const xl = '75em' // 1200px
 export const xx = '105em' // 1680px
 
-export default { xs, sm, md, lg, xl }
+export const breakpoints = { xs, sm, md, lg, xl, xx }
+
+export default breakpoints

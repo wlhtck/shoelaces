@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`container renders default container styles 1`] = `
+Object {
+  "@media (min-width: 105em)": Object {
+    "width": "99em",
+  },
+  "@media (min-width: 36em)": Object {
+    "width": "34em",
+  },
+  "@media (min-width: 48em)": Object {
+    "width": "45em",
+  },
+  "@media (min-width: 62em)": Object {
+    "width": "58em",
+  },
+  "@media (min-width: 75em)": Object {
+    "width": "70em",
+  },
+  "marginLeft": "auto",
+  "marginRight": "auto",
+}
+`;
+
+exports[`container renders fluid container styles 1`] = `
+Object {
+  "marginLeft": "auto",
+  "marginRight": "auto",
+  "overflowX": "hidden",
+  "paddingLeft": 0,
+  "paddingRight": 0,
+  "width": "100%",
+}
+`;

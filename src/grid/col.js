@@ -1,22 +1,11 @@
-import { flattenMin } from '../util/media'
-/**
-*
-* Utility function for calculating col size
-* values below 1 are used to calculate percentage widths
-* values between 1 and 12 are used for 12 column grid pattern
-*
-**/
-export const colSize = num => num * 100 + '%'
+import render from '../util/render'
+import { unit } from '../util/types'
+import flex from './flex'
+import { flattenMin } from './media'
 
-/**
-*
-* Mixin for setting column width
-* returns css for flex-basis and max-width depending on num
-* uses colSize to determine width
-* also accepts 'auto'
-*
-**/
-export const colWidth = size => {
+const colSize = num => num * 100 + '%'
+
+const colWidth = size => {
   if (size === 'auto') {
     return {
       flexGrow: 1,
@@ -33,30 +22,29 @@ export const colWidth = size => {
   }
 }
 
-/**
-*
-* Mixin for setting offset
-* uses colSize to calculate margin for the given side
-*
-**/
-// TODO: Fix the colOffset, currently the prog only accepts a number
-// this won't work in responsive column implementations
-export const colOffset = num => {
+const colOffset = num => {
   if (!num) return {}
   return {
     marginLeft: `${colSize(num)}`
   }
 }
 
-export const col = ({ gutter, reverse, offset, ...props }) => {
-  return {
-    boxSizing: 'border-box',
-    flex: '0 0 auto',
-    padding: gutter || '0.5em',
-    flexDirection: reverse ? 'column-reverse' : 'initial',
-    ...colOffset(offset),
-    ...flattenMin(props, colWidth)
-  }
+const col = ({ gutter, offset, size, ...props }) => ({
+  boxSizing: 'border-box',
+  flex: '0 0 auto',
+  padding: gutter,
+  ...flex(props),
+  ...flattenMin(offset, colOffset),
+  ...flattenMin(props, colWidth)
+})
+
+col.defaultProps = {
+  column: true,
+  gutter: '0.5em'
 }
 
-export default col
+col.propTypes = {
+  gutter: unit
+}
+
+export default render(col)

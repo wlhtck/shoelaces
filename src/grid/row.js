@@ -1,13 +1,17 @@
-export const row = ({ gutter, reverse }) => {
-  return {
-    boxSizing: 'border-box',
-    display: 'flex',
-    flex: '0 1 auto',
-    flexDirection: reverse ? 'row-reverse' : 'row',
-    flexWrap: 'wrap',
-    marginLeft: gutter || '-0.5em',
-    marginRight: gutter || '-0.5em'
-  }
+import render from '../util/render'
+import flex from './flex'
+
+const row = ({ gutter, ...props }) => ({
+  boxSizing: 'border-box',
+  flex: '0 1 auto',
+  ...flex(props),
+  marginLeft: `-${gutter}`,
+  marginRight: `-${gutter}`
+})
+
+row.defaultProps = {
+  gutter: '0.5em',
+  wrap: true
 }
 
-export default row
+export default render(row)

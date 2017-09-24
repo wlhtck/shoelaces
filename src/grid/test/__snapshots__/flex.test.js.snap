@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`flex renders alignContent, alignItems, and alignSelf end 1`] = `
+Object {
+  "alignContent": "flex-end",
+  "alignItems": "flex-end",
+  "alignSelf": "flex-end",
+  "display": "flex",
+  "flexDirection": "row",
+  "flexWrap": "nowrap",
+  "justifyContent": "space-between",
+  "order": 0,
+}
+`;
+
+exports[`flex renders column 1`] = `
+Object {
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
+  "display": "flex",
+  "flexDirection": "column",
+  "flexWrap": "nowrap",
+  "justifyContent": "space-between",
+  "order": 0,
+}
+`;
+
+exports[`flex renders column reverse 1`] = `
+Object {
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
+  "display": "flex",
+  "flexDirection": "column-reverse",
+  "flexWrap": "nowrap",
+  "justifyContent": "space-between",
+  "order": 0,
+}
+`;
+
+exports[`flex renders default flex styles 1`] = `
+Object {
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
+  "display": "flex",
+  "flexDirection": "row",
+  "flexWrap": "nowrap",
+  "justifyContent": "space-between",
+  "order": 0,
+}
+`;
+
+exports[`flex renders first 1`] = `
+Object {
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
+  "display": "flex",
+  "flexDirection": "row",
+  "flexWrap": "nowrap",
+  "justifyContent": "space-between",
+  "order": -1,
+}
+`;
+
+exports[`flex renders first 2`] = `
+Object {
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
+  "display": "flex",
+  "flexDirection": "row",
+  "flexWrap": "nowrap",
+  "justifyContent": "space-between",
+  "order": -1,
+}
+`;
+
+exports[`flex renders inline 1`] = `
+Object {
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
+  "display": "inline-flex",
+  "flexDirection": "row",
+  "flexWrap": "nowrap",
+  "justifyContent": "space-between",
+  "order": 0,
+}
+`;
+
+exports[`flex renders justifyContent around 1`] = `
+Object {
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
+  "display": "flex",
+  "flexDirection": "row",
+  "flexWrap": "nowrap",
+  "justifyContent": "space-around",
+  "order": 0,
+}
+`;
+
+exports[`flex renders last 1`] = `
+Object {
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
+  "display": "flex",
+  "flexDirection": "row",
+  "flexWrap": "nowrap",
+  "justifyContent": "space-between",
+  "order": 1,
+}
+`;
+
+exports[`flex renders reverse 1`] = `
+Object {
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
+  "display": "flex",
+  "flexDirection": "row-reverse",
+  "flexWrap": "nowrap",
+  "justifyContent": "space-between",
+  "order": 0,
+}
+`;
+
+exports[`flex renders wrap 1`] = `
+Object {
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
+  "display": "flex",
+  "flexDirection": "row",
+  "flexWrap": "wrap",
+  "justifyContent": "space-between",
+  "order": 0,
+}
+`;
