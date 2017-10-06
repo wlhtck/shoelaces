@@ -9,10 +9,8 @@ Object {
   "display": "flex",
   "flex": "0 0 auto",
   "flexDirection": "column",
-  "flexWrap": "nowrap",
   "justifyContent": "space-between",
   "marginLeft": "50%",
-  "order": 0,
   "padding": "0.5em",
 }
 `;
@@ -26,10 +24,8 @@ Object {
   "display": "flex",
   "flex": "0 0 auto",
   "flexDirection": "column",
-  "flexWrap": "nowrap",
   "justifyContent": "space-between",
   "marginLeft": "50%",
-  "order": 0,
   "padding": "0.5em",
 }
 `;
@@ -43,9 +39,7 @@ Object {
   "display": "flex",
   "flex": "0 0 auto",
   "flexDirection": "column",
-  "flexWrap": "nowrap",
   "justifyContent": "space-between",
-  "order": 0,
   "padding": "0.5em",
 }
 `;
@@ -59,9 +53,29 @@ Object {
   "display": "flex",
   "flex": "0 0 auto",
   "flexDirection": "column-reverse",
-  "flexWrap": "nowrap",
   "justifyContent": "space-between",
-  "order": 0,
+  "padding": "0.5em",
+}
+`;
+
+exports[`col renders size 0.5 and offset 0.5 width at sm and size 1 offset 0 at xs 1`] = `
+Object {
+  "@media (min-width: 36em)": Object {
+    "flexBasis": "50%",
+    "marginLeft": "50%",
+    "maxWidth": "50%",
+  },
+  "alignContent": "flex-start",
+  "alignItems": "stretch",
+  "alignSelf": "auto",
+  "boxSizing": "border-box",
+  "display": "flex",
+  "flex": "0 0 auto",
+  "flexBasis": "100%",
+  "flexDirection": "column",
+  "justifyContent": "space-between",
+  "marginLeft": "0%",
+  "maxWidth": "100%",
   "padding": "0.5em",
 }
 `;
@@ -80,9 +94,7 @@ Object {
   "display": "flex",
   "flex": "0 0 auto",
   "flexDirection": "column",
-  "flexWrap": "nowrap",
   "justifyContent": "space-between",
-  "order": 0,
   "padding": "0.5em",
 }
 `;
@@ -97,10 +109,8 @@ Object {
   "flex": "0 0 auto",
   "flexBasis": "50%",
   "flexDirection": "column",
-  "flexWrap": "nowrap",
   "justifyContent": "space-between",
   "maxWidth": "50%",
-  "order": 0,
   "padding": "0.5em",
 }
 `;

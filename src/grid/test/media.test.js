@@ -43,31 +43,4 @@ describe('media', () => {
     })
   })
 
-  describe('flattenMin', () => {
-    it('renders the renders width 0.5em inside a min xs media query', () => {
-      expect(
-        flattenMin({ xs: '0.5em', bp: '10em' }, width => ({ width }))
-      ).toMatchSnapshot()
-    })
-
-    it('renders the renders width 0.5em without a media query', () => {
-      expect(
-        flattenMin('0.5em', width => ({ width }))
-      ).toMatchSnapshot()
-    })
-  })
-
-  describe('flattenMax', () => {
-    it('renders the renders width 0.5em inside a max xl media query', () => {
-      expect(
-        flattenMax({ xl: '5em', bp: '10em' }, width => ({ width }))
-      ).toMatchSnapshot()
-    })
-
-    it('renders the renders width 0.5em without a media query', () => {
-      expect(
-        flattenMax('0.5em', width => ({ width }))
-      ).toMatchSnapshot()
-    })
-  })
 })

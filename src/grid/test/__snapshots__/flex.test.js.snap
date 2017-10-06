@@ -6,10 +6,7 @@ Object {
   "alignItems": "flex-end",
   "alignSelf": "flex-end",
   "display": "flex",
-  "flexDirection": "row",
-  "flexWrap": "nowrap",
   "justifyContent": "space-between",
-  "order": 0,
 }
 `;
 
@@ -20,9 +17,7 @@ Object {
   "alignSelf": "auto",
   "display": "flex",
   "flexDirection": "column",
-  "flexWrap": "nowrap",
   "justifyContent": "space-between",
-  "order": 0,
 }
 `;
 
@@ -33,9 +28,7 @@ Object {
   "alignSelf": "auto",
   "display": "flex",
   "flexDirection": "column-reverse",
-  "flexWrap": "nowrap",
   "justifyContent": "space-between",
-  "order": 0,
 }
 `;
 
@@ -45,10 +38,7 @@ Object {
   "alignItems": "stretch",
   "alignSelf": "auto",
   "display": "flex",
-  "flexDirection": "row",
-  "flexWrap": "nowrap",
   "justifyContent": "space-between",
-  "order": 0,
 }
 `;
 
@@ -58,8 +48,6 @@ Object {
   "alignItems": "stretch",
   "alignSelf": "auto",
   "display": "flex",
-  "flexDirection": "row",
-  "flexWrap": "nowrap",
   "justifyContent": "space-between",
   "order": -1,
 }
@@ -71,8 +59,6 @@ Object {
   "alignItems": "stretch",
   "alignSelf": "auto",
   "display": "flex",
-  "flexDirection": "row",
-  "flexWrap": "nowrap",
   "justifyContent": "space-between",
   "order": -1,
 }
@@ -84,10 +70,7 @@ Object {
   "alignItems": "stretch",
   "alignSelf": "auto",
   "display": "inline-flex",
-  "flexDirection": "row",
-  "flexWrap": "nowrap",
   "justifyContent": "space-between",
-  "order": 0,
 }
 `;
 
@@ -97,10 +80,7 @@ Object {
   "alignItems": "stretch",
   "alignSelf": "auto",
   "display": "flex",
-  "flexDirection": "row",
-  "flexWrap": "nowrap",
   "justifyContent": "space-around",
-  "order": 0,
 }
 `;
 
@@ -110,8 +90,6 @@ Object {
   "alignItems": "stretch",
   "alignSelf": "auto",
   "display": "flex",
-  "flexDirection": "row",
-  "flexWrap": "nowrap",
   "justifyContent": "space-between",
   "order": 1,
 }
@@ -124,9 +102,7 @@ Object {
   "alignSelf": "auto",
   "display": "flex",
   "flexDirection": "row-reverse",
-  "flexWrap": "nowrap",
   "justifyContent": "space-between",
-  "order": 0,
 }
 `;
 
@@ -136,9 +112,7 @@ Object {
   "alignItems": "stretch",
   "alignSelf": "auto",
   "display": "flex",
-  "flexDirection": "row",
   "flexWrap": "wrap",
   "justifyContent": "space-between",
-  "order": 0,
 }
 `;

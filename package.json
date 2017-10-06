@@ -7,6 +7,7 @@
     "lib"
   ],
   "scripts": {
+    "lint": "eslint src/",
     "build": "webpack --env build",
     "dev": "webpack --progress --colors --watch --env dev",
     "test": "jest --coverage",
@@ -47,5 +48,8 @@
   "bugs": {
     "url": "https://github.com/will-hitchcock/shoelaces-js/issues"
   },
-  "homepage": "http://shoelaces-js.com"
+  "homepage": "http://shoelaces-js.com",
+  "dependencies": {
+    "deepmerge": "^1.5.2"
+  }
 }

@@ -6,5 +6,6 @@ export const xl = '75em' // 1200px
 export const xx = '105em' // 1680px
 
 export const breakpoints = { xs, sm, md, lg, xl, xx }
+export const keys = Object.keys(breakpoints)
 
 export default breakpoints

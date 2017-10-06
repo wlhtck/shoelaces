@@ -8,12 +8,10 @@ Object {
   "boxSizing": "border-box",
   "display": "flex",
   "flex": "0 1 auto",
-  "flexDirection": "row",
   "flexWrap": "wrap",
   "justifyContent": "space-between",
   "marginLeft": "-0.5em",
   "marginRight": "-0.5em",
-  "order": 0,
 }
 `;
 
@@ -30,7 +28,6 @@ Object {
   "justifyContent": "space-between",
   "marginLeft": "-0.5em",
   "marginRight": "-0.5em",
-  "order": 0,
 }
 `;
 
@@ -47,7 +44,6 @@ Object {
   "justifyContent": "space-between",
   "marginLeft": "-20em",
   "marginRight": "-20em",
-  "order": 0,
 }
 `;
 
@@ -59,11 +55,9 @@ Object {
   "boxSizing": "border-box",
   "display": "flex",
   "flex": "0 1 auto",
-  "flexDirection": "row",
   "flexWrap": "wrap",
   "justifyContent": "space-between",
   "marginLeft": "-15px",
   "marginRight": "-15px",
-  "order": 0,
 }
 `;

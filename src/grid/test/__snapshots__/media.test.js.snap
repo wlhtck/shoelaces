@@ -26,32 +26,6 @@ Object {
 }
 `;
 
-exports[`media flattenMax renders the renders width 0.5em inside a max xl media query 1`] = `
-Object {
-  "@media (max-width: 75em)": Object {
-    "width": "5em",
-  },
-}
-`;
-
-exports[`media flattenMax renders the renders width 0.5em without a media query 1`] = `
-Object {
-  "width": "0.5em",
-}
-`;
-
-exports[`media flattenMin renders the renders width 0.5em inside a min xs media query 1`] = `
-Object {
-  "width": "0.5em",
-}
-`;
-
-exports[`media flattenMin renders the renders width 0.5em without a media query 1`] = `
-Object {
-  "width": "0.5em",
-}
-`;
-
 exports[`media max renders the styles inside a max md media query 1`] = `
 Object {
   "@media (max-width: 48em)": Object {

@@ -24,4 +24,9 @@ describe('col', () => {
   it('renders size md auto col styles', () => {
     expect(col({ md: 'auto' })).toMatchSnapshot()
   })
+
+  it('renders size 0.5 and offset 0.5 width at sm and size 1 offset 0 at xs',
+    () => {
+      expect(col({ sm: 0.5, xs: 1, offset: { sm: 0.5, xs: 0 } })).toMatchSnapshot()
+    })
 })
