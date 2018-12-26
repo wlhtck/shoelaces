@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Flex /> should render a <Flex /> 1`] = `
+<div
+  className="sc-bdVaJa iqnCHL"
+/>
+`;
