@@ -1,6 +1,6 @@
 import query from './media.new';
 
-const container = ({ fluid }) => {
+const container = ({ fluid } = {}) => {
   const props = fluid
     ? {
       width: '100%',
