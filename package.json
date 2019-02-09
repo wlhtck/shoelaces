@@ -14,9 +14,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.12.4",
     "jest": "^24.1.0",
-    "lerna": "^3.11.0",
-    "webpack": "^4.29.3",
-    "webpack-cli": "^3.2.3"
+    "lerna": "^3.11.0"
   },
   "version": "0.1.0",
   "main": "index.js",

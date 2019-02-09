@@ -1,9 +1,5 @@
-import container from './grid/container';
-import row from './grid/row';
-import col from './grid/col';
-import flex from './grid/flex';
-import { min, max, between } from './grid/media';
-
-export {
-  container, row, col, flex, min, max, between,
-};
+export { default as container } from './grid/container';
+export { default as row } from './grid/row';
+export { default as col } from './grid/col';
+export { default as flex } from './grid/flex';
+export { min, max, between } from './grid/media';

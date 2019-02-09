@@ -8,9 +8,10 @@
   "bugs": {
     "url": "https://github.com/will-hitchcock/shoelaces/issues"
   },
-  "main": "dist/main.js",
+  "main": "lib/index.js",
   "scripts": {
-    "build": "webpack",
+    "prepublish": "npm run build",
+    "build": "babel src --out-dir lib",
     "test": "jest --coverage"
   },
   "repository": {
