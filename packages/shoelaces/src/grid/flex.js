@@ -1,6 +1,4 @@
-import render from '../util/render';
-import { oneOf, bool } from '../util/types';
-import { min, deepQuery } from './media';
+import { isUndefined, omitBy, flow } from 'lodash/fp';
 
 const properties = {
   around: 'space-around',
@@ -14,106 +12,42 @@ const properties = {
   stretch: 'stretch',
 };
 
-const _alignContent = (alignContent) => (alignContent
-  ? {
-    alignContent: properties[alignContent],
+const getOrder = (first, last) => {
+  if (first) return -1;
+  if (last) return 1;
+  return undefined;
+};
+
+const getFlexDirection = (column, reverse) => {
+  if (!(column || reverse)) {
+    return undefined;
   }
-  : {});
-
-const _alignItems = (alignItems) => (alignItems
-  ? {
-    alignItems: properties[alignItems],
-  }
-  : {});
-
-const _alignSelf = (alignSelf) => (alignSelf
-  ? {
-    alignSelf: properties[alignSelf],
-  }
-  : {});
-
-const _display = (inline) => ({ display: inline ? 'inline-flex' : 'flex' });
-
-const _flexDirection = (column, reverse) => (column || reverse
-  ? {
-    flexDirection: `${column ? 'column' : 'row'}${reverse
-      ? '-reverse'
-      : ''}`,
-  }
-  : {});
-
-const _flexWrap = (wrap) => (wrap ? { flexWrap: wrap ? 'wrap' : 'nowrap' } : {});
-
-const _justifyContent = (justifyContent) => (justifyContent ? { justifyContent: properties[justifyContent] } : {});
-
-const _order = (first, last) => (first || last
-  ? {
-    order: first ? -1 : last ? 1 : 0,
-  }
-  : {});
+  return `${column ? 'column' : 'row'}${reverse ? '-reverse' : ''}`;
+};
 
 const flex = ({
-  alignContent,
-  alignItems,
-  alignSelf,
+  alignContent = 'start',
+  alignItems = 'stretch',
+  alignSelf = 'auto',
   column,
   first,
   inline,
-  justifyContent,
+  justifyContent = 'between',
   last,
   reverse,
   wrap,
-}) => ({
-  ...deepQuery(min, [
-    { data: alignContent, mixin: _alignContent },
-    { data: alignItems, mixin: _alignItems },
-    { data: alignSelf, mixin: _alignSelf },
-    { data: inline, mixin: _display },
-    { data: wrap, mixin: _flexWrap },
-    { data: justifyContent, mixin: _justifyContent },
-  ]),
-  // ..._alignContent(alignContent),
-  // ..._alignItems(alignItems),
-  // ..._alignSelf(alignSelf),
-  // ..._display(inline),
-  // ..._flexWrap(wrap),
-  // ..._justifyContent(justifyContent),
-  ..._flexDirection(column, reverse),
-  ..._order(first, last),
+} = {}) => ({
+  alignContent: properties[alignContent],
+  alignItems: properties[alignItems],
+  alignSelf: properties[alignSelf],
+  display: inline ? 'inline-flex' : 'flex',
+  flexWrap: wrap ? 'wrap' : undefined,
+  justifyContent: properties[justifyContent],
+  flexDirection: getFlexDirection(column, reverse),
+  order: getOrder(first, last),
 });
 
-flex.defaultProps = {
-  alignContent: 'start',
-  alignItems: 'stretch',
-  alignSelf: 'auto',
-  justifyContent: 'between',
-};
-
-flex.propTypes = {
-  alignContent: oneOf([
-    'start',
-    'end',
-    'center',
-    'between',
-    'around',
-    'stretch',
-  ]),
-  alignItems: oneOf(['start', 'end', 'center', 'baseline', 'stretch']),
-  alignSelf: oneOf(['auto', 'start', 'end', 'center', 'baseline', 'stretch']),
-  column: bool,
-  first: bool,
-  inlin: bool,
-  justifyContent: oneOf([
-    'start',
-    'end',
-    'center',
-    'between',
-    'around',
-    'evenly',
-  ]),
-  last: bool,
-  reverse: bool,
-  wrap: bool,
-};
-
-export default render(flex);
+export default flow(
+  flex,
+  omitBy(isUndefined),
+);

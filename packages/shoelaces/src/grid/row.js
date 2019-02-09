@@ -1,17 +1,15 @@
-import render from '../util/render';
+import { isUndefined, omitBy, flow } from 'lodash/fp';
 import flex from './flex';
 
-const row = ({ gutter, ...props }) => ({
+const row = ({ gutter = '0.5em', wrap = true, ...props } = {}) => ({
   boxSizing: 'border-box',
   flex: '0 1 auto',
-  ...flex(props),
+  ...flex({ wrap, ...props }),
   marginLeft: `-${gutter}`,
   marginRight: `-${gutter}`,
 });
 
-row.defaultProps = {
-  gutter: '0.5em',
-  wrap: true,
-};
-
-export default render(row);
+export default flow(
+  row,
+  omitBy(isUndefined),
+);

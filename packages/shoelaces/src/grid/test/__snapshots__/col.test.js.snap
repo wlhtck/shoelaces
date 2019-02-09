@@ -17,6 +17,9 @@ Object {
 
 exports[`col renders 0.5 xs offset col styles 1`] = `
 Object {
+  "@media (min-width: 0)": Object {
+    "marginLeft": "50%",
+  },
   "alignContent": "flex-start",
   "alignItems": "stretch",
   "alignSelf": "auto",
@@ -25,7 +28,6 @@ Object {
   "flex": "0 0 auto",
   "flexDirection": "column",
   "justifyContent": "space-between",
-  "marginLeft": "50%",
   "padding": "0.5em",
 }
 `;
@@ -60,6 +62,11 @@ Object {
 
 exports[`col renders size 0.5 and offset 0.5 width at sm and size 1 offset 0 at xs 1`] = `
 Object {
+  "@media (min-width: 0)": Object {
+    "flexBasis": "100%",
+    "marginLeft": "0%",
+    "maxWidth": "100%",
+  },
   "@media (min-width: 36em)": Object {
     "flexBasis": "50%",
     "marginLeft": "50%",
@@ -71,11 +78,8 @@ Object {
   "boxSizing": "border-box",
   "display": "flex",
   "flex": "0 0 auto",
-  "flexBasis": "100%",
   "flexDirection": "column",
   "justifyContent": "space-between",
-  "marginLeft": "0%",
-  "maxWidth": "100%",
   "padding": "0.5em",
 }
 `;
@@ -101,16 +105,18 @@ Object {
 
 exports[`col renders size xs 0.5 col styles 1`] = `
 Object {
+  "@media (min-width: 0)": Object {
+    "flexBasis": "50%",
+    "maxWidth": "50%",
+  },
   "alignContent": "flex-start",
   "alignItems": "stretch",
   "alignSelf": "auto",
   "boxSizing": "border-box",
   "display": "flex",
   "flex": "0 0 auto",
-  "flexBasis": "50%",
   "flexDirection": "column",
   "justifyContent": "space-between",
-  "maxWidth": "50%",
   "padding": "0.5em",
 }
 `;

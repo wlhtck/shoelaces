@@ -1,12 +1,12 @@
-import render from '../util/render';
-import { unit } from '../util/types';
+import {
+  mergeAll, omitBy, isUndefined, flow, isNumber,
+} from 'lodash/fp';
 import flex from './flex';
-import { min, deepQuery } from './media';
+import media from './media';
 
-const colSize = (num) => `${num * 100}%`;
+const getSize = (num) => `${num * 100}%`;
 
-const colWidth = (size) => {
-  if (!size) return {};
+const getWidth = (size) => {
   if (size === 'auto') {
     return {
       flexGrow: 1,
@@ -15,7 +15,7 @@ const colWidth = (size) => {
     };
   }
 
-  const width = colSize(size);
+  const width = getSize(size);
 
   return {
     flexBasis: `${width}`,
@@ -23,34 +23,25 @@ const colWidth = (size) => {
   };
 };
 
-const colOffset = (num) => (typeof num !== 'number' ? {} : { marginLeft: `${colSize(num)}` });
+const getOffset = (num) => (isNumber(num) ? ({ marginLeft: `${getSize(num)}` }) : undefined);
 
 const col = ({
-  gutter, offset, size, xs, sm, md, lg, xl, xx, ...props
-}) => ({
-  boxSizing: 'border-box',
-  flex: '0 0 auto',
-  padding: gutter,
-  ...flex(props),
-  ...deepQuery(min, [
-    { data: offset, mixin: colOffset },
-    {
-      data: {
-        xs, sm, md, lg, xl, xx,
-      },
-      mixin: colWidth,
-    },
-  ]),
-});
+  column = true, gutter = '0.5em', offset, size, xs, sm, md, lg, xl, xx, ...props
+} = {}) => mergeAll([
+  {
+    boxSizing: 'border-box',
+    flex: '0 0 auto',
+    padding: gutter,
+  },
+  flex({ column, ...props }),
+  media(getOffset)(offset),
+  media(getWidth)({
+    xs, sm, md, lg, xl, xx,
+  }),
+]);
 
-col.defaultProps = {
-  column: true,
-  gutter: '0.5em',
-  offset: {},
-};
 
-col.propTypes = {
-  gutter: unit,
-};
-
-export default render(col);
+export default flow(
+  col,
+  omitBy(isUndefined),
+);
