@@ -1,4 +1,4 @@
-import query from './media.new';
+import media from './media';
 
 const container = ({ fluid } = {}) => {
   const props = fluid
@@ -8,7 +8,7 @@ const container = ({ fluid } = {}) => {
       paddingLeft: 0,
       overflowX: 'hidden',
     }
-    : query((width) => ({ width }))({
+    : media((width) => ({ width }))({
       sm: '34em', md: '45em', lg: '58em', xl: '70em', xx: '99em',
     });
 
