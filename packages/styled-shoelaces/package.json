@@ -1,0 +1,41 @@
+{
+  "name": "styled-shoelaces",
+  "homepage": "http://shoelaces-js.com",
+  "author": "Will Hitchcock",
+  "license": "MIT",
+  "description": "Shoelaces for styled-components",
+  "version": "0.1.0",
+  "bugs": {
+    "url": "https://github.com/will-hitchcock/shoelaces/issues"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "babel src --out-dir lib --ignore 'src/**/*.test.js'",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/will-hitchcock/shoelaces.git"
+  },
+  "keywords": [
+    "grid",
+    "css-in-js",
+    "styled-components",
+    "react",
+    "flexbox"
+  ],
+  "dependencies": {
+    "enzyme-adapter-react-16": "^1.9.1",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "shoelaces": "0.1.0",
+    "styled-components": "^2.1.2"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "enzyme": "^3.8.0",
+    "enzyme-to-json": "^3.3.5",
+    "jest-styled-components": "^6.3.1"
+  }
+}

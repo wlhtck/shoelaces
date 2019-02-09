@@ -31,3 +31,6 @@ node_modules
 .vscode
 
 lib
+dist
+.next
+.DS_Store

@@ -1,0 +1,25 @@
+exports[`Button renders a <StyledLink /> 1`] = `
+<Styled(Link)
+  to="some/path" />
+`;
+
+exports[`Button renders an <A /> 1`] = `
+<styled.a
+  href="http://www.google.com"
+  target="_blank" />
+`;
+
+exports[`Button renders css 1`] = `
+Object {
+  "background": "#4682b4",
+  "border": "2px solid #8B97A2",
+  "borderRadius": "3px",
+  "color": "white",
+  "display": "inline-block",
+  "margin": "0.5rem 1rem",
+  "padding": "0.5rem 0",
+  "textAlign": "center",
+  "textDecoration": "none",
+  "width": "11rem",
+}
+`;

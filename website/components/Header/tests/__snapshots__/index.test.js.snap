@@ -1,0 +1,46 @@
+exports[`Header renders a <H1 /> 1`] = `<styled.h1 />`;
+
+exports[`Header renders a <H1 /> 2`] = `<styled.h1 />`;
+
+exports[`Header renders a <H2 /> 1`] = `<styled.h2 />`;
+
+exports[`Header renders a <H3 /> 1`] = `<styled.h3 />`;
+
+exports[`Header renders a <H4 /> 1`] = `<styled.h4 />`;
+
+exports[`Header renders a <H5 /> 1`] = `<styled.h5 />`;
+
+exports[`Header renders css 1`] = `
+Object {
+  "h1": Object {
+    "color": "#324859",
+    "fontSize": "4.23606797749979em",
+    "margin": "0.25em 0",
+    "textAlign": "center",
+  },
+  "h2": Object {
+    "color": "#324859",
+    "fontSize": "2.618033988749895em",
+    "margin": "0.25em 0",
+    "textAlign": "center",
+  },
+  "h3": Object {
+    "color": "#324859",
+    "fontSize": "1.618033988749895em",
+    "margin": "0.25em 0",
+    "textAlign": "center",
+  },
+  "h4": Object {
+    "color": "#324859",
+    "fontSize": "1em",
+    "margin": "0.25em 0",
+    "textAlign": "center",
+  },
+  "h5": Object {
+    "color": "#324859",
+    "fontSize": "1em",
+    "margin": "0.25em 0",
+    "textAlign": "center",
+  },
+}
+`;

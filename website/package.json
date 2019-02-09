@@ -1,0 +1,26 @@
+{
+  "name": "website",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "next": "^7.0.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-live": "^1.12.0",
+    "react-shoelaces": "^0.1.0",
+    "shoelaces": "^0.1.0",
+    "styled-components": "^4.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next --inspect",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
