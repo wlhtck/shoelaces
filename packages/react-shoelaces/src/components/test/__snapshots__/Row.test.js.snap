@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<Row /> should render a <Row /> 1`] = `
-<div
-  className="sc-bdVaJa cErtkT"
-/>
-`;

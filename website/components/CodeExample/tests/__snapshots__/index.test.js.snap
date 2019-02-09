@@ -1,0 +1,25 @@
+exports[`<CodeExample /> renders a <LiveProvider /> 1`] = `
+<LiveProvider
+  code="<p>pi</p>"
+  mountStylesheet={true}
+  noInline={false}
+  scope={
+    Object {
+      "e": 2.718281828459045,
+      "pi": 3.141592653589793,
+    }
+  }>
+  <Header
+    type="h2" />
+  <LivePreview />
+  <styled.div
+    justifyContent="center">
+    <styled.div
+      lg={0.6666666666666666}
+      xs={1}>
+      <Styled(LiveEditor) />
+      <Styled(LiveError) />
+    </styled.div>
+  </styled.div>
+</LiveProvider>
+`;

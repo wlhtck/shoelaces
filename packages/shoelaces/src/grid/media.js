@@ -1,54 +1,54 @@
-import breakpoints, { keys } from '../const/breakpoints'
-import deepmerge from 'deepmerge'
+import deepmerge from 'deepmerge';
+import breakpoints, { keys } from '../const/breakpoints';
 
 const queries = {
-  min: key => `@media (min-width: ${breakpoints[key]})`,
-  max: key => `@media (max-width: ${breakpoints[key]})`,
-  between: (start, end) =>
-    `@media (min-width: ${breakpoints[start]} and (max-width: ${breakpoints[
-      end
-    ]}`
-}
+  min: (key) => `@media (min-width: ${breakpoints[key]})`,
+  max: (key) => `@media (max-width: ${breakpoints[key]})`,
+  between: (start, end) => `@media (min-width: ${breakpoints[start]} and (max-width: ${breakpoints[
+    end
+  ]}`,
+};
 
-export const min = key => args => {
-  if (!Object.keys(args).length) return null
+export const min = (key) => (args) => {
+  if (!Object.keys(args).length) return null;
   if (!key || !breakpoints[key]) {
-    return args
+    return args;
   }
-  return { [queries.min(key)]: args }
-}
+  return { [queries.min(key)]: args };
+};
 
-export const max = key => args => {
-  if (!Object.keys(args).length) return null
+export const max = (key) => (args) => {
+  if (!Object.keys(args).length) return null;
   if (!key) {
-    return args
+    return args;
   }
-  return { [queries.max(key)]: args }
-}
+  return { [queries.max(key)]: args };
+};
 
-export const between = (start, end) => args => {
-  if (!Object.keys(args).length) return null
+export const between = (start, end) => (args) => {
+  if (!Object.keys(args).length) return null;
   if (!start || !end) {
-    return args
+    return args;
   }
-  return { [queries.between(start, end)]: args }
-}
+  return { [queries.between(start, end)]: args };
+};
 
 export const doQuery = (query, obj, func) => {
-  let processedObj = {}
+  let processedObj = {};
 
   if (typeof obj !== 'object') {
-    return { ...processedObj, ...func(obj) }
+    return { ...processedObj, ...func(obj) };
   }
 
-  for (let key in obj) {
-    processedObj = { ...processedObj, ...query(key)(func(obj[key])) }
+  for (const key in obj) {
+    processedObj = { ...processedObj, ...query(key)(func(obj[key])) };
   }
 
-  return processedObj
-}
+  return processedObj;
+};
 
-export const deepQuery = (query, arr) =>
-  deepmerge.all(arr.map(item => doQuery(query, item.data, item.mixin)))
+export const deepQuery = (query, arr) => deepmerge.all(arr.map((item) => doQuery(query, item.data, item.mixin)));
 
-export default { min, max, between, doQuery, deepQuery }
+export default {
+  min, max, between, doQuery, deepQuery,
+};

@@ -1,40 +1,29 @@
 {
   "name": "shoelaces",
-  "version": "0.1.0",
+  "homepage": "http://shoelaces-js.com",
+  "author": "Will Hitchcock",
+  "license": "MIT",
   "description": "CSS in JS grid system",
-  "main": "lib/shoelaces.js",
-  "files": [
-    "lib"
-  ],
-  "scripts": {
-    "lint": "eslint src/",
-    "build": "webpack --env build",
-    "dev": "webpack --progress --colors --watch --env dev",
-    "test": "jest --coverage",
-    "test:watch": "jest --watchAll"
+  "version": "0.1.0",
+  "bugs": {
+    "url": "https://github.com/will-hitchcock/shoelaces/issues"
   },
-  "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx}",
-      "!src/index.{js,jsx}"
-    ]
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/will-hitchcock/shoelaces-js.git"
+    "url": "https://github.com/will-hitchcock/shoelaces.git"
   },
   "keywords": [
     "grid",
     "css-in-js",
     "styled-components",
-    "glamorous"
+    "glamorous",
+    "emotion"
   ],
-  "author": "Will Hitchcock",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/will-hitchcock/shoelaces-js/issues"
-  },
-  "homepage": "http://shoelaces-js.com",
   "dependencies": {
     "deepmerge": "2.2.1"
   }
