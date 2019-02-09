@@ -1,27 +1,23 @@
-import render from '../util/render';
-import { min, doQuery } from './media';
+import query from './media.new';
 
 const container = ({ fluid }) => {
-  const width = fluid
+  const props = fluid
     ? {
       width: '100%',
       paddingRight: 0,
       paddingLeft: 0,
       overflowX: 'hidden',
     }
-    : doQuery(
-      min,
-      {
-        sm: '34em', md: '45em', lg: '58em', xl: '70em', xx: '99em',
-      },
-      (width) => ({ width }),
-    );
+    : query((width) => ({ width }))({
+      sm: '34em', md: '45em', lg: '58em', xl: '70em', xx: '99em',
+    });
 
   return {
     marginRight: 'auto',
     marginLeft: 'auto',
-    ...width,
+    ...props,
   };
 };
 
-export default render(container);
+
+export default container;
