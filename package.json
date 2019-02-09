@@ -21,7 +21,8 @@
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "postinstall": "lerna bootstrap",
+    "test": "lerna run test",
     "lint": "eslint ."
   },
   "author": "William Hitchcock",
