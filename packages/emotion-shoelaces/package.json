@@ -1,5 +1,5 @@
 {
-  "name": "emotino-shoelaces",
+  "name": "emotion-shoelaces",
   "homepage": "http://shoelaces-js.com",
   "author": "Will Hitchcock",
   "license": "MIT",
@@ -8,7 +8,7 @@
   "bugs": {
     "url": "https://github.com/will-hitchcock/shoelaces/issues"
   },
-  "module": "src/index.js",
+  "module": "src/index.jsx",
   "main": "lib/index.js",
   "scripts": {
     "prepublish": "npm run build",

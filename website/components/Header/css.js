@@ -1,4 +1,4 @@
-import colors from '../colors';
+import colors from '../../../common/colors';
 
 const phi = (1 + Math.sqrt(5)) / 2;
 const shared = {
