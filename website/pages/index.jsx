@@ -15,9 +15,6 @@ export default () => (
     </Col>
     <Row justifyContent="center">
       <Button path="https://github.com/will-hitchcock/shoelaces">shoelaces</Button>
-      <Button path="https://github.com/will-hitchcock/react-shoelaces">
-            react-shoelaces
-      </Button>
     </Row>
     {examples.map(({ name, ...item }) => <CodeExample key={name} {...item} />)}
   </Container>
