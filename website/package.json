@@ -13,8 +13,7 @@
     "react-dom": "^16.8.1",
     "react-live": "^1.12.0",
     "shoelaces": "^0.1.0",
-    "styled-components": "^4.1.3",
-    "styled-shoelaces": "^0.1.0"
+    "styled-components": "^4.1.3"
   },
   "devDependencies": {},
   "scripts": {
