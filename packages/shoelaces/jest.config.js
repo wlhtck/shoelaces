@@ -15,17 +15,11 @@ module.exports = {
     'default',
     [
       'jest-junit', {
-        suiteName: '<💅Shoelaces />',
-        outputDirectory: '../../test-results/styled-shoelaces',
+        suiteName: 'Shoelaces',
+        outputDirectory: '../../test-results/shoelaces',
         outputName: './results.xml',
       },
     ],
-  ],
-  setupFiles: [
-    './jest.setup.js',
-  ],
-  snapshotSerializers: [
-    'enzyme-to-json/serializer',
   ],
   testPathIgnorePatterns: [
     'node_modules',

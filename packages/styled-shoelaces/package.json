@@ -11,8 +11,8 @@
   "main": "lib/index.js",
   "scripts": {
     "prepublish": "npm run build",
-    "build": "babel src --out-dir lib --ignore 'src/**/*.test.js'",
-    "test": "jest --coverage"
+    "build": "babel src --out-dir lib --ignore 'src/**/*.test.js','src/**/*.test.jsx'",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
