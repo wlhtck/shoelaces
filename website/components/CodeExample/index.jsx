@@ -9,8 +9,8 @@ import { string, object } from 'prop-types';
 import {
   LiveProvider, LiveEditor, LiveError, LivePreview,
 } from 'react-live';
-import { Row, Col } from 'react-shoelaces';
 import { flex } from 'shoelaces';
+import { Row, Col } from '../../../packages/styled-shoelaces/src';
 import { editor, error } from './css';
 import Header from '../Header';
 
