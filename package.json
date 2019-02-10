@@ -31,6 +31,7 @@
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
+    "deploy": "lerna run deploy && git add website/out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix website/out origin gh-pages && git reset HEAD --hard",
     "clean": "lerna clean",
     "build": "lerna bootstrap",
     "postinstall": "lerna bootstrap",
