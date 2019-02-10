@@ -1,4 +1,3 @@
 {
-  "extends": "../../.babelrc",
-  "plugins": ["emotion"]
+  "extends": "../../.babelrc"
 }

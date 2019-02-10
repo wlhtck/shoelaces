@@ -1,4 +1,3 @@
 {
-  "extends": "../../.babelrc",
-  "plugins": ["babel-plugin-styled-components"]
+  "extends": "../../.babelrc"
 }
