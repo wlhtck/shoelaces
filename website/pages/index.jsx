@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-shoelaces';
+import { Container, Row, Col } from '../../packages/styled-shoelaces/src';
 import Button from '../components/Button';
 import Header from '../components/Header';
 import CodeExample from '../components/CodeExample';

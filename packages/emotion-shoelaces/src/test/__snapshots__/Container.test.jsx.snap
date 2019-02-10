@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Container /> should render a <Container /> 1`] = `
+<ForwardRef(render)
+  __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
+  css={
+    Object {
+      "@media (min-width: 105em)": Object {
+        "width": "99em",
+      },
+      "@media (min-width: 36em)": Object {
+        "width": "34em",
+      },
+      "@media (min-width: 48em)": Object {
+        "width": "45em",
+      },
+      "@media (min-width: 62em)": Object {
+        "width": "58em",
+      },
+      "@media (min-width: 75em)": Object {
+        "width": "70em",
+      },
+      "marginLeft": "auto",
+      "marginRight": "auto",
+    }
+  }
+/>
+`;

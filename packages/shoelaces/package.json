@@ -8,6 +8,7 @@
   "bugs": {
     "url": "https://github.com/will-hitchcock/shoelaces/issues"
   },
+  "module": "src/index.js",
   "main": "lib/index.js",
   "scripts": {
     "prepublish": "npm run build",
@@ -27,5 +28,7 @@
   ],
   "dependencies": {
     "lodash": "^4.17.11"
+  },
+  "devDependencies": {
   }
 }

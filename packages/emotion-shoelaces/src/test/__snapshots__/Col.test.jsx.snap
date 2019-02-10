@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Col /> should render a <Col /> 1`] = `
+<ForwardRef(render)
+  __EMOTION_TYPE_PLEASE_DO_NOT_USE__="div"
+  css={
+    Object {
+      "alignContent": "flex-start",
+      "alignItems": "stretch",
+      "alignSelf": "auto",
+      "boxSizing": "border-box",
+      "display": "flex",
+      "flex": "0 0 auto",
+      "flexDirection": "column",
+      "justifyContent": "space-between",
+      "padding": "0.5em",
+    }
+  }
+/>
+`;

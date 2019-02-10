@@ -1,8 +1,8 @@
-import ReactShoelaces from '../../../packages/styled-shoelaces/src';
+import StyledShoelaces from '../../../packages/styled-shoelaces/src';
 import Header from '../Header';
-import Box from '../Box';
+import Box from '../../../common/Box';
 
-const ReactScope = { Box, ...ReactShoelaces };
+const ReactScope = { Box, ...StyledShoelaces };
 
 const examples = [
   {

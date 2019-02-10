@@ -1,9 +1,9 @@
 {
-  "name": "styled-shoelaces",
+  "name": "emotion-shoelaces",
   "homepage": "http://shoelaces-js.com",
   "author": "Will Hitchcock",
   "license": "MIT",
-  "description": "Shoelaces for styled-components",
+  "description": "Shoelaces for emotion",
   "version": "0.1.0",
   "bugs": {
     "url": "https://github.com/will-hitchcock/shoelaces/issues"
@@ -22,22 +22,21 @@
   "keywords": [
     "grid",
     "css-in-js",
-    "styled-components",
+    "emotion",
     "react",
     "flexbox"
   ],
   "dependencies": {
+    "@emotion/core": "^10.0.7",
     "enzyme-adapter-react-16": "^1.9.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
-    "shoelaces": "0.1.0",
-    "styled-components": "^2.1.2"
+    "shoelaces": "0.1.0"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.0.0",
-    "babel-plugin-styled-components": "^1.10.0",
+    "babel-plugin-emotion": "^10.0.7",
     "enzyme": "^3.8.0",
-    "enzyme-to-json": "^3.3.5",
-    "jest-styled-components": "^6.3.1"
+    "enzyme-to-json": "^3.3.5"
   }
 }
