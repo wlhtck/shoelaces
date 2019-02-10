@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Col /> should render a <Col /> 1`] = `
+<styled.div
+  _css={
+    Object {
+      "alignContent": "flex-start",
+      "alignItems": "stretch",
+      "alignSelf": "auto",
+      "boxSizing": "border-box",
+      "display": "flex",
+      "flex": "0 0 auto",
+      "flexDirection": "column",
+      "justifyContent": "space-between",
+      "padding": "0.5em",
+    }
+  }
+/>
+`;
