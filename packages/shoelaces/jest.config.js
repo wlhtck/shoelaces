@@ -11,13 +11,7 @@ module.exports = {
       lines: 98,
     },
   },
-  setupFiles: [
-    './jest.setup.js',
-  ],
-  coverageDirectory: '../../test-results/styled-shoelaces',
-  snapshotSerializers: [
-    'enzyme-to-json/serializer',
-  ],
+  coverageDirectory: '../../test-results/shoelaces',
   testPathIgnorePatterns: [
     'node_modules',
   ],
