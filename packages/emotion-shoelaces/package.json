@@ -4,7 +4,7 @@
   "author": "Will Hitchcock",
   "license": "MIT",
   "description": "CSS in JS grid system",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "bugs": {
     "url": "https://github.com/will-hitchcock/shoelaces/issues"
   },
@@ -27,7 +27,7 @@
   ],
   "dependencies": {
     "@emotion/core": "^10.0.7",
-    "shoelaces": "^0.2.0"
+    "shoelaces": "^0.2.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
