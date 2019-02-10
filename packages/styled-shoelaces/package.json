@@ -4,7 +4,7 @@
   "author": "Will Hitchcock",
   "license": "MIT",
   "description": "Shoelaces for styled-components",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "bugs": {
     "url": "https://github.com/will-hitchcock/shoelaces/issues"
   },
@@ -27,7 +27,7 @@
     "flexbox"
   ],
   "dependencies": {
-    "shoelaces": "0.1.0",
+    "shoelaces": "^0.2.0",
     "styled-components": "^2.1.2"
   },
   "devDependencies": {
