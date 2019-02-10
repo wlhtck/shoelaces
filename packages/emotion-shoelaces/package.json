@@ -30,6 +30,7 @@
     "shoelaces": "^0.2.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "babel-plugin-emotion": "^10.0.7",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.9.1",
