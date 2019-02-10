@@ -11,7 +11,16 @@ module.exports = {
       lines: 98,
     },
   },
-  coverageDirectory: '../../test-results/shoelaces',
+  reporters: [
+    'default',
+    [
+      'jest-junit', {
+        suiteName: 'Shoelaces',
+        outputDirectory: '../../test-results/shoelaces',
+        outputName: './results.xml',
+      },
+    ],
+  ],
   testPathIgnorePatterns: [
     'node_modules',
   ],

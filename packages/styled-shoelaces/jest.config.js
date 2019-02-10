@@ -11,10 +11,19 @@ module.exports = {
       lines: 98,
     },
   },
+  reporters: [
+    'default',
+    [
+      'jest-junit', {
+        suiteName: '<💅Shoelaces />',
+        outputDirectory: '../../test-results/styled-shoelaces',
+        outputName: './results.xml',
+      },
+    ],
+  ],
   setupFiles: [
     './jest.setup.js',
   ],
-  coverageDirectory: '../../test-results/styled-shoelaces',
   snapshotSerializers: [
     'enzyme-to-json/serializer',
   ],
